@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-12-55T16:27:55Z" product-name="ehrentafel">
+		<header/>
+		<body>
+
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="vorname.description">
+				<source>vorname</source>
+			</trans-unit>
+			<trans-unit id="ort.description">
+				<source>ort</source>
+			</trans-unit>
+			<trans-unit id="jahr.description">
+				<source>jahr</source>
+			</trans-unit>
+			<trans-unit id="text.description">
+				<source>text</source>
+			</trans-unit>
+			<trans-unit id="verstorben.description">
+				<source>verstorben</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

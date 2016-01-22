@@ -1,0 +1,50 @@
+{namespace tnu=Tx_Ehrentafel_ViewHelpers}
+
+<h1 align="center">{ehrung.titel}</h1>
+<p class="ehrentafel">[ <f:link.page>Zurück zur Übersicht</f:link.page> ]</p>
+
+<f:widget.paginate objects="{personen}" as="paginiertePersonen" configuration="{itemsPerPage: 10 insertAbove: 1, insertBelow: 1, maximumNumberOfLinks: 8}">
+	<f:for each="{paginiertePersonen}" as="person">
+      	<table style="width:400px;" class="ehrung" align="center">
+      		<f:if condition="{person.ort}">
+                  <f:then>
+                      <f:if condition="{ehrung.nr} == 7">
+                          <f:then>
+                              <tr bgcolor="a8c7ff"><td><b>
+							      <tnu:if condition="preg_match('%^[A-Z]%', '{person.name}')">
+                          		      <f:then>
+			                              {person.name} {person.vorname}, {person.ort} 
+			                          </f:then>
+			                          <f:else>
+							              <tnu:eval code="preg_replace('%^\*%', '', '{person.ort}')" /> <tnu:eval code="preg_replace('%^[^A-Z]%u', '', '{person.name}')" />
+	                                  </f:else>
+							      </tnu:if>
+							      <f:if condition="{person.verstorben}">†</f:if></b> ({person.jahr})</td>
+                              </tr>
+                              <tr>
+                                  <td>Geehrt mit dem PSB Ehrenteller, anlässlich:<br />{person.text}</td>
+                              </tr>
+                          </f:then>
+                          <f:else>
+                              <tr bgcolor="a8c7ff">
+                                  <td><b>{person.name} {person.vorname} <f:if condition="{person.verstorben}">†</f:if></b> ({person.ort})</td>
+                              </tr>
+                          </f:else>
+                      </f:if>
+                  </f:then>
+                  <f:else>
+                      <tr bgcolor="a8c7ff">
+                          <td><b>{person.name} {person.vorname} <f:if condition="{person.verstorben}">†</f:if></b></td>
+                      </tr>
+                      <f:if condition="{person.text}">
+                          <tr>
+                              <td>{person.jahr} {person.text}</td>
+                          </tr>
+                      </f:if>
+                  </f:else>
+              </f:if>
+          </table>
+      </f:for>
+</f:widget.paginate>
+
+<p class="ehrentafel">[ <f:link.page>Zurück zur Übersicht</f:link.page> ]</p>

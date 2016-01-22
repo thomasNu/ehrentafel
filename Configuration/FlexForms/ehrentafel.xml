@@ -1,0 +1,38 @@
+<T3DataStructure>
+	<ROOT>
+		<type>array</type>
+		<el>
+			<switchableControllerActions>
+				<TCEforms>
+					<label>Inhaltselement wählen:</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">Ehrung</numIndex>
+								<numIndex index="1">Ehrung->list;Person->show</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">Person</numIndex>
+								<numIndex index="1">Person->show;Ehrung->list</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+			<settings.titelEhrung>
+				<TCEforms>
+					<label>Titel Ehrung:</label>
+					<config>
+						<type>input</type>
+						<size>32</size>
+						<eval>trim</eval>
+					</config>
+				</TCEforms>
+			</settings.titelEhrung>
+		</el>
+	</ROOT>
+</T3DataStructure>
+

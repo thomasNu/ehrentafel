@@ -1,0 +1,14 @@
+{namespace tnu=Tx_Ehrentafel_ViewHelpers}
+
+        <h1 align="center">Übersicht</h1>
+
+        <table width="400px" align="center" class="tx_ehrentafel" >
+                <tr><td align="center">
+                       <f:for each="{ehrungen}" as="geehrte" iteration="i">
+                        <p><f:link.action controller="Person" action="show" arguments="{ehrung : geehrte}"> {geehrte.titel}</f:link.action>
+                        (<f:count>{geehrte.person}</f:count>{geehrte.sort})</p>
+                           <f:if condition="{i.cycle} == 5" then="</td><td align=center>" />
+                    </f:for>
+                </td></tr>
+        </table>
+        <p class="note" align="center">(* Test Sortierung nach Jahr)</p>

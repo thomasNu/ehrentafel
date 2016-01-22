@@ -1,0 +1,24 @@
+.f3-widget-paginator {
+	color: #800000;
+	font-weight: bold;
+	padding-left: 0;
+	}
+.f3-widget-paginator li {
+	float: left;
+	display: block;
+	padding: 0px 2px;
+	margin: 2px;
+	border: 1px dotted black;
+	}	 
+table.ehrung {
+  width: 200px;
+  margin-top: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+p.ehrentafel {
+ margin-top: 20px;
+ margin-bottom: 20px; 
+ text-align: center;
+} 
+

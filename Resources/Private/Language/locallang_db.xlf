@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-12-55T16:27:55Z" product-name="ehrentafel">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_ehrentafel_domain_model_ehrung">
+				<source>Ehrung</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_ehrung.nr">
+				<source>Nr</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_ehrung.titel">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_ehrung.person">
+				<source>Person</source>
+			</trans-unit>
+
+			<trans-unit id="tx_ehrentafel_domain_model_person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.vorname">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.ort">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.jahr">
+				<source>Jahr</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_ehrentafel_domain_model_person.verstorben">
+				<source>Verstorben</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
